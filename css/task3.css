@@ -1,40 +1,40 @@
 html{
-    Font-size:62.5%
+    Font-size:625%
 }
 body{
     background-color: #68cdd5;
 }
 .back{
-    margin-top: 1.5rem;
-    margin-left:1.5rem;
+    margin-right:0.04rem;
+    margin-top:0.04rem;
 }
 .grape{
     text-align:center;
-    margin-top:3rem;
-    margin-bottom: 3rem;
+    margin-top:0.1rem;
+    margin-bottom:0.1rem;
 }
 .text{
     color:#ffffff;
     margin-left:10%;
     margin-right:10%;
-    Font-size:1.5rem
+    Font-size:0.19rem
 }
 .person{
     text-align:center;
-    margin-top:25%;
+    margin-top:15%;
     margin-left:13%;
     float:left;
-    Font-size:1.5rem;
+    Font-size:0.15rem;
 }
 .person p{
     color:#ffffff;
 }
 .grape2{
     text-align:center;
-    margin-top:25%;
+    margin-top:15%;
     margin-right:13%;
     float:right;
-    Font-size:1.5rem;
+    Font-size:0.15rem;
 }
 .grape2{
     color:#ffffff;
