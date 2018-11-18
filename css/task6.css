@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    background-color: #ffffff;
+}
+.header {
+    width: 100%;
+    height: 12rem;
+    background-color: #68cdd5;
+    position: relative;
+    text-align: center;
+}
+.text1,.text2 {
+    /*转换成行内块元素*/
+    display: inline-block;
+    font-size: 4rem;
+    padding-top: 1.5rem;
+    padding-right: 5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1.5rem;
+}
+.text1 {
+    padding-left:3rem ;
+    margin-top: 2rem;
+    margin-right: -4rem;
+    background-color: #55a8b3;
+    border: 2px solid #55a8b3;
+    color: #ffffff;
+}
+.text2 {
+    padding-left:5rem ;
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border: 2px solid#ffffff;
+    color: #68cdd5;
+}
+.img {
+    /*去除边框线*/
+    outline:none;
+    position: absolute;
+    right: 5rem;
+    padding-top: 3.5rem;
+    background-color: #68cdd5;
+    border: none;}
+.reasons {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 4rem;
+    border-bottom: 2px solid #cccccc;
+}
+.btn-default {
+    border: none;
+    border-right: 2px solid #cccccc;
+}
+.btn {
+    display: inline-block;
+    padding: 1.2rem 4rem;
+    margin-bottom: 0;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.btn .caret {
+    margin-left: 5.5rem;}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 15px dashed;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 16px;
+    list-style: none;
+}
+.main {
+    width: 100%;
+    height: 80rem;
+    /*设置滚动条*/
+    overflow: auto ;
+
+}
+.text3 {
+    width: 100%;
+    height: 15rem;
+    /*下边框：宽度 直线 颜色*/
+    border-bottom: 2px solid #cccccc;
+    font-size: 2.5rem;
+}
+.date img ,.time{
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #cccccc;
+}
+.time1 ,.money ,.date2 img {
+    display: inline-block;
+}
+.time1 {
+    padding: 1rem 6rem;
+    padding-left: 8rem;
+    padding-right: 25rem;
+}
+.money {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10rem;
+    color: #ff0000;
+}
+.date2 img{
+    padding: 1rem;
+}
+.date3 img ,.address {
+    display: inline-block;
+    padding: 1rem 2rem;
+    color: #cccccc;
+}
+footer {
+    /*使页脚固定在页面底部*/
+    position:absolute;
+    bottom:0rem;
+    width: 100%;
+    height: 9rem;
+    background-color: #cccccc;
+}
+ .footer{
+     /*行内块元素弹性布局*/
+    display:inline-flex ;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo1,.photo2,.photo3{
+    padding-left:  11rem;
+    padding-right: 10.5rem;
+    background-color: #cccccc;
+    border: none;
+}
+.photo1 img,.photo3 img {
+    width: 4rem;
+    height: 4rem;
+}
+.photo2 img{
+    width: 8rem;
+    height: 8rem;
+}
+.photo1 p,.photo3 p {
+    font-size: 2rem;
+}
+.photo1 p{
+    color: #5fc0cd;
+
+}
+
+
+
+
