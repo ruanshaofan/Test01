@@ -1,7 +1,14 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
 html {
     font-size: 62.5%;
 }
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -18,11 +25,12 @@ header {
     height: 3rem;
     margin-top: 1.5rem;
     margin-left: 1rem;
+    text-align: center;
 }
 .homepage {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translatex(-50%);
     font-size: 2rem;
     color: #ffffff;
     margin-top: 2rem;
@@ -42,8 +50,8 @@ main {
 .woman img {
     position: absolute;
     left: 5%;
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
     margin-top: 3rem;
 }
 .name {
@@ -76,47 +84,90 @@ main {
 .major p {
     border-left: 3px solid #68cdd5;
     padding-left: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 12rem;
+    margin-bottom: 1rem;
 }
 .text4 {
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 .text4 img {
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
     padding-left: 4rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.2rem;
 }
 .span1 {
     font-size: 1.5rem;
     position: absolute;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     margin-left: 0.5rem;
 }
 .span2 {
     font-size:1.5rem ;
-    margin-top:1.5rem ;
+    margin-top:1.2rem ;
     margin-left: 0.5rem;
     position: absolute;
 }
 .text5,.text6,.text7,.text8{
     border-bottom: 1px solid #cccccc;
-    padding: 2rem;
+    padding: 1.2rem;
 }
-.span5,.span7,.span9{
+.span5,.span7,.span9,.span11{
     font-size: 1.5rem;
-    padding: 1.5rem;
+    padding: 0.5rem;
     color: #cccccc;
     border-right: 1px solid #cccccc;
 }
-.span6 {
+.span6 ,.span8,.span10{
     padding-left: 2rem;
     font-size: 1.5rem;
 }
-.text6 {
-    border-bottom: 1px solid #cccccc;
-    padding: 2rem;
+.span10 {
+    color: #e26163;
 }
+.a {
+    font-size: 1rem;
+    width: 72%;
+    float: right;
+    padding-bottom: 1.2rem;
+}
+footer {
+    width: 100%;
+    height: 8rem;
+}
+.buttom {
+    position: absolute;
+    left: 2%;
+    background-color: #ffffff;
+    border: 2px solid #68cdd5;
+    padding: 1rem;
+
+}
+.buttom2{
+    float: right;
+    position: absolute;
+    right: 2%;
+    background-color: #68cdd5;
+    border: 2px solid #68cdd5;
+    padding: 1rem;
+
+
+
+}
+.buttom ,.buttom2{
+    display:inline-block;
+    margin: 3rem;
+    margin-bottom: 2rem;
+    width:25%;
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+
+
+
+
 
 
 

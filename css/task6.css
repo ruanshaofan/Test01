@@ -137,8 +137,8 @@ body {
     color: #cccccc;
 }
 footer {
-    /*使页脚固定在页面底部*/
-    position:absolute;
+    /*使用固定定位使页脚固定在页面底部*/
+    position:fixed;
     bottom:0rem;
     width: 100%;
     height: 9rem;

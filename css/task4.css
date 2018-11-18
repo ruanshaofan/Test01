@@ -8,7 +8,7 @@ body{
 }
 header{
     background-color:#5fc0cd;
-    color:white;
+    color:#ffffff;
     height:6rem;
     width: 100%;
     /*相对定位*/
@@ -19,27 +19,28 @@ header{
     font-size: 1.8rem;
     position: absolute;
     left: 0%;
-    padding: 1.8rem;
+    padding: 2rem;
+
 }
 .login{
-    font-size: 2rem;
+    font-size: 1.8rem;
     /*绝对定位*/
     position: absolute;
     /*相对于父元素的左边框浮动50%宽度*/
     left:50%;
     /*相对于盒子本身宽度向左移动盒子宽度的一半，保证盒子绝对居中*/
     transform: translateX(-50%);
-    padding:1.8rem;
+    padding:2rem;
 }
 .close{
     font-size: 1.8rem;
     position: absolute;
     right:0%;
-    padding: 1.8rem;
+    padding: 2rem;
 
 }
 .iphone,.locked{
-    background-color: white;
+    background-color: #ffffff;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 100%;
