@@ -72,6 +72,7 @@ body {
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
+    background-color: #ffffff;
 }
 .btn .caret {
     margin-left: 5.5rem;}
@@ -107,10 +108,11 @@ body {
     /*下边框：宽度 直线 颜色*/
     border-bottom: 2px solid #cccccc;
     font-size: 2.5rem;
+    padding: 1rem;
 }
 .date img ,.time{
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     color: #cccccc;
 }
 .time1 ,.money ,.date2 img {
@@ -128,13 +130,18 @@ body {
     padding-left: 10rem;
     color: #ff0000;
 }
+.date2 {
+    display: inline-flex;
+    padding: 1rem;
+}
 .date2 img{
     padding: 1rem;
 }
 .date3 img ,.address {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     color: #cccccc;
+    align-items: center;
 }
 footer {
     /*使用固定定位使页脚固定在页面底部*/
@@ -145,15 +152,11 @@ footer {
     background-color: #cccccc;
 }
  .footer{
-     /*行内块元素弹性布局*/
-    display:inline-flex ;
-    flex-direction: row;
-    justify-content: space-between;
+    display:flex ;
+    justify-content: space-around;
     align-items: center;
 }
 .photo1,.photo2,.photo3{
-    padding-left:  11rem;
-    padding-right: 10.5rem;
     background-color: #cccccc;
     border: none;
 }
@@ -162,8 +165,8 @@ footer {
     height: 4rem;
 }
 .photo2 img{
-    width: 8rem;
-    height: 8rem;
+    width: 9rem;
+    height: 9rem;
 }
 .photo1 p,.photo3 p {
     font-size: 2rem;
