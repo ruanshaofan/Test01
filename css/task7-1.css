@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+.header {
+    width: 100%;
+    height: 14rem;
+    background-color: #29bde0;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+
+.box1 {
+    height: 14rem;
+    background-color: #eff0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin: 2rem 0;
+
+}
+.header1 {
+    width: 90%;
+    padding-top:4rem ;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.header1 span {
+    display: inline-block;
+    padding-right: 18rem;
+    padding-left: 18rem;
+}
+
+.box2 {
+    height: 14rem;
+    background-color: #eff0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.box2 p {
+    color: #fbb435;
+}
+.header2 {
+    width: 100%;
+    line-height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 4px solid #000000;
+}
+
+.BOX {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0rem;
+}
+ a {
+     /*text-decoration: none ;定义文本修饰:下划线 文本颜色*/
+     text-decoration: none;
+     color: #ffffff;
+ }
+.box3 {
+    height: 30rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+
+}
+.header3 {
+    line-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #83b09a;
+}
+.header3 p {
+    display: inline-block;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    background-color: #29bde0;
+    color: #ffffff;
+}
+.text4 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.dot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.box4,.box5,.box6,.box7 {
+    width:3rem ;
+    height: 3rem;
+    background-color: #68cdd5;
+    margin-left: 2%;
+    border-radius: 50%;
+}
+.box5,.box6,.box7 {
+    background-color: #f0f0f0;
+}
+.caret {
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    /*transparent表示通透明，顺序为：上-右-下-左*/
+    border-color: transparent transparent transparent #ffff00;
+    position: absolute;
+    right: 6rem;
+}
+
+
+
