@@ -15,6 +15,7 @@
     align-items: center;
     height: 8rem;
     background-color: #68cdd5;
+    border-bottom: 4px solid #ffffff
 }
 .header img {
     padding: 0 2rem;
@@ -28,6 +29,7 @@
     align-items: center;
     height: 16rem;
     background-color: #68cdd5;
+    margin-bottom: -4px;
 }
 .main1 {
     display: flex;
@@ -36,6 +38,7 @@
     width: 100%;
     height: 16rem;
     background-color: #68cdd5;
+    margin-bottom: -4px;
 
 }
 .text {
