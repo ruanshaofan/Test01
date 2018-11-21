@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务7-投票页</title>
+    <link rel="stylesheet" href="../css/task7-2.css">
+</head>
+<body>
+<div class="header">
+    <button class="button1">
+        <img src="../img/task-7/task-2-1.png" alt=""></button>
+    <button class="text">投票</button>
+    <button class="button2">
+        <img src="../img/task-7/task-2-2.png" alt="">
+    </button>
+</div>
+<div class="header1">
+    <div class="text2">发表讨论结束，大家请投票</div>
+    <img src="../img/task-7/task-2-3.png" alt="" id="control">
+    <audio src="../audio/财富自由.mp3" controls="controls" id="audio"></audio>
+</div>
+<div class="caret"></div>
+<div class="text3">点击得票数最多人的头像</div>
+<main>
+    <div class="aaa">
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="aaa">
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="aaa">
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+        <div class="main">
+            <div class="box1">水民</div>
+            <div class="box2">1号</div>
+            <div class="photo">
+                <img src="../img/task-7/task-2-4.png" alt="">
+                <img src="../img/task-7/task-2-5.png" alt="">
+                <img src="../img/task-7/task-2-6.png" alt="">
+                <img src="../img/task-7/task-2-7.png" alt="">
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <a href="html7-3.html">
+        <div class="button">投死</div>
+    </a>
+</footer>
+
+<!--引入的js代码-->
+<script>
+    window.onload = function () {
+        var btn = document.getElementById("control");
+        var audio = document.getElementById("audio");
+        btn.onclick = function (e) {
+            if (audio !== null) {
+                //检测播放是否已暂停.audio.paused 在播放器播放时返回false.
+                console.log(audio.paused);
+                console.log(e);
+                if (audio.paused) {
+                    audio.play();
+                }
+                else {
+                    audio.pause();
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>
+
