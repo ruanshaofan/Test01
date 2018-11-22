@@ -1,24 +1,27 @@
-
 * {
     margin: 0;
     padding: 0;
 
 }
+
 html {
     font-size: 62.5%;
 }
+
 body {
     height: 100%;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
 }
+
 header {
     position: relative;
     background-color: #68cdd5;
     width: 100%;
     height: 6rem;
 }
+
 .return {
     position: absolute;
     width: 10%;
@@ -27,6 +30,7 @@ header {
     margin-left: 1rem;
     text-align: center;
 }
+
 .homepage {
     position: absolute;
     left: 50%;
@@ -36,9 +40,12 @@ header {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-main {
-    position: relative;
+
+.main {
+    height: 12rem;
+    width: 100%;
 }
+
 .doctor {
     display: block;
     position: absolute;
@@ -47,129 +54,127 @@ main {
     width: 100%;
     height: 12rem;
 }
-.woman img {
-    position: absolute;
-    left: 5%;
+
+.box1 {
+    height: 12rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.women img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 6rem;
-    width: 6rem;
-    margin-top: 3rem;
+    padding-left: 2rem;
 }
-.name {
-    position: absolute;
-    left: 30%;
-    margin-top: 4rem;
-    font-size: 1.5rem;
-    color: #ffffff;
+
+.box2 {
+    font-size: 1rem;
+    padding-left: 2rem;
 }
-.address img {
-    position: absolute;
-    left: 30%;
-    width: 1rem;
-    height: 1rem;
-    margin-top: 6rem ;
+
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
 }
-.home {
-    position: absolute;
-    left: 35%;
-    font-size: 1.5rem ;
-    margin-top: 5.5rem;
-    color: #ffffff;
-}
+
 .major {
     font-size: 2rem;
     padding: 1.5rem;
     padding-bottom: 0;
     border-bottom: 1px solid #cccccc;
 }
+
 .major p {
     border-left: 3px solid #68cdd5;
     padding-left: 1rem;
     font-size: 1.5rem;
-    margin-top: 12rem;
+
     margin-bottom: 1rem;
 }
+
+.main1 {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
 .text4 {
-    border-bottom: 1px solid #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .text4 img {
-    padding-top: 1.2rem;
-    padding-left: 4rem;
-    padding-bottom: 1.2rem;
+    padding: 0.5rem 1rem;
 }
-.span1 {
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 1.2rem;
-    margin-left: 0.5rem;
+
+.span {
+    padding-right: 1rem;
 }
-.span2 {
-    font-size:1.5rem ;
-    margin-top:1.2rem ;
-    margin-left: 0.5rem;
-    position: absolute;
+
+.text5 {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
 }
-.text5,.text6,.text7,.text8{
-    border-bottom: 1px solid #cccccc;
-    padding: 1.2rem;
+
+.span5 {
+    padding: 1rem 2rem;
+    border-right: 2px solid #f0f0f0;
+    margin: 1rem 0;
+    /*规定段落中的文本不进行换行*/
+    white-space: nowrap;
 }
-.span5,.span7,.span9,.span11{
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    color: #cccccc;
-    border-right: 1px solid #cccccc;
+
+.span6 {
+    padding: 1rem 2rem;
 }
-.span6 ,.span8,.span10{
-    padding-left: 2rem;
-    font-size: 1.5rem;
-}
-.span10 {
-    color: #e26163;
-}
-.a {
-    font-size: 1rem;
-    width: 72%;
-    float: right;
-    padding-bottom: 1.2rem;
-}
+
 footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
     width: 100%;
     height: 8rem;
-}
-.buttom {
-    position: absolute;
-    left: 2%;
     background-color: #ffffff;
-    border: 2px solid #68cdd5;
-    padding: 1rem;
-
 }
-.buttom2{
-    float: right;
-    position: absolute;
-    right: 2%;
-    background-color: #68cdd5;
-    border: 2px solid #68cdd5;
+
+button {
+    width: 40%;
     padding: 1rem;
-
-
-
-}
-.buttom ,.buttom2{
-    display:inline-block;
-    margin: 3rem;
-    margin-bottom: 2rem;
-    width:25%;
+    border-radius: 1rem;
+    /*去除按钮下的边框*/
+    outline: none;
     font-size: 2rem;
-    text-align: center;
-    border-radius: 0.5rem;
+    border: 2px solid #68cdd5;
+
+
 }
 
+.button1 {
+    background-color: #ffffff;
+    color: #68cdd5;
 
+}
 
+.button2 {
+    background-color: #68cdd5;
+    color: #ffffff;
+}
 
+.box {
+    overflow: auto;
+    width: 100%;
+    height: 55rem;
 
-
-
-
+}
 
 
