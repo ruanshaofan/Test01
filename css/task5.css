@@ -171,6 +171,7 @@ button {
 }
 
 .box {
+    /*添加滑动*/
     overflow: auto;
     width: 100%;
     height: 55rem;
