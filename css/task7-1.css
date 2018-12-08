@@ -69,7 +69,7 @@ body {
 .BOX {
     width: 90%;
     margin-left: 5%;
-    margin-top: 0rem;
+    margin-top: 0;
 }
  a {
      /*text-decoration: none ;定义文本修饰:下划线 文本颜色*/
@@ -105,6 +105,7 @@ body {
     font-size: 3rem;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
+    color: #000000;
 }
 .dot {
     display: flex;
@@ -113,14 +114,14 @@ body {
     background-color: #ffffff;
 
 }
-.box4,.box5,.box6,.box7 {
+.box4,.box5 {
     width:3rem ;
     height: 3rem;
-    background-color: #68cdd5;
+    background-color: #29bde0;
     margin-left: 2%;
     border-radius: 50%;
 }
-.box5,.box6,.box7 {
+.box5 {
     background-color: #f0f0f0;
 }
 .caret {

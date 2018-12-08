@@ -7,7 +7,7 @@
 }
 .body {
     width: 100%;
-    background-color: red;
+    /*background-color: red;*/
 }
 .header {
     display: flex;
@@ -58,11 +58,11 @@
     background-color: #68cdd5;
 }
 .text1 {
-    height: 25rem;
-    width: 80%;
-    font-size: 2rem;
-    color: #f2fbfd;
-}
+     height: 25rem;
+     width: 80%;
+     font-size: 2rem;
+     color: #f2fbfd;
+ }
 .text1 p {
     padding: 1.5rem 0;
 }
