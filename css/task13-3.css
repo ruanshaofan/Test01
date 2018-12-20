@@ -1,0 +1,99 @@
+.html {
+    font-size: 62.5%;
+}
+.body {
+    width: 100%;
+}
+.header {
+    height: 8rem;
+    border-bottom: 4px solid #ffffff
+}
+.header img {
+    padding: 0 2rem;
+}
+.main {
+    height: 16rem;
+}
+.main1 {
+    width: 100%;
+    height: 16rem;
+    margin-bottom: -4px;
+}
+.text {
+    height: 12rem;
+    width: 80%;
+    color: #ffff00;
+}
+.main2 {
+    height: 25rem;
+}
+.text1 {
+    height: 25rem;
+    width: 80%;
+    font-size: 2rem;
+    color: #f2fbfd;
+}
+.text1 p {
+    padding: 1.5rem 0;
+}
+.text2,.text3,.text4 {
+    padding: 1.5rem 0;
+}
+.text2 span,.text3 span{
+    padding-right: 5rem;
+}
+.main3 {
+    height: 15rem;
+    border: 3px solid #dddddd;
+    overflow: auto;
+}
+.text4 {
+    height: 10rem;
+    width: 80%;
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: #ffffff;
+}
+.text4 .date {
+    font-size: 3rem;
+    color: #515151;
+}
+.text4 .time {
+    position: absolute;
+    right: 10rem;
+    color: #e3e3e3;
+}
+.text5 {
+    color: #acacac;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+    /*背景色采用RGBA透明：r:红， g:绿 b：蓝（取值在0~255之间任意数值）；  a：透明度，（取值在0 ~1之间）*/
+    background-color: rgba(0,0,255,0.3);;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.repetition,.share {
+    border: 2px solid #ffff00;
+    border-radius: 2rem;
+}
+.repetition {
+    padding: 1rem 4rem;
+    margin-right: 2rem;
+    background-color: #f66f66;
+}
+.share {
+    padding: 1rem 3rem;
+    margin-left: 2rem;
+    background-color: #fbb435;
+}
