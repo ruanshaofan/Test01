@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #f0f0f0;
+    position: relative;
+
+}
+
+.firstone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #fff;
+    color: #29b078;
+}
+
+.phone {
+    padding-left: 1rem;
+}
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.logo img {
+    margin: 0 0 0 1rem;
+}
+.ssss {
+    height: 4rem;
+    background-color: white;
+
+}
+
+.firstone1 {
+    position: absolute;
+    right: 0;
+    line-height: 4rem;
+    margin-right: 1rem;
+}
+
+/*第一部分结束*/
+
+.nav_n {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: #29b078;
+}
+
+.nav1 {
+    padding-left: 1rem;
+}
+.nav2 {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.nav2 :hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.box1 {
+    margin: 0 0 0 1rem;
+    color: #fff;
+    line-height: 5rem;
+}
+@media (max-width: 991px) {
+    .dropdown {
+        height: 8rem;
+        background-color: #29b078;
+        /*确定优先级*/
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+    }
+}
+.dropdown img {
+    background-color: #29b078;
+}
+.open>.dropdown-menu {
+    display: block;
+    text-align: center;
+}
+.dropdown-menu {
+    width: 100%;
+    top: 100%;
+    font-size: 1.5rem;
+    background-color: #29b078;
+
+}
+
+/*第二部分结束*/
+.bgphoto {
+    background: url("../img/task8.3/hand.png") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 10rem;
+}
+
+/*第三部分结束*/
+.homepages {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 6rem;
+    /*border-bottom: 1px solid #bfcfd7;*/
+}
+
+.homepages p {
+    margin-bottom: 0;
+}
+
+/*第四部分结束*/
+
+.project {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+}
+
+.project1 p {
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+ul {
+    /*list-style: none去除无序列表本来的样式*/
+    list-style: none;
+    color: green;
+    /*font-size: 0.7rem;*/
+    padding-left: 45%;
+}
+a {
+    text-decoration:none;
+}
+
+.project2 p:hover {
+    color: #f9a372;
+
+
+}
+/*!*使用before伪元素在文本内容（content）之前添加样式*!*/
+ul p::before {
+    /*定义content:" "为空*/
+    content: " ";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100px;
+    border: 2px solid #f9a372;
+    margin-right: 0.5rem;
+    /*background-color: #f9a372;*/
+
+}
+ul p:hover::before {
+     background-color:#f9a372 ;
+ }
+
+
+
+    /*第五部分结束*/
+.part {
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: white;
+}
+
+.part img {
+    /*width: 12rem;*/
+    margin-right: 1rem;
+}
+
+/*第六部分结束*/
+.part1 {
+    padding: 4rem;
+    background-color: white;
+}
+
+/*第七部分结束*/
+.footer {
+    background-color: #29b078;
+    color: #fff;
+    margin-top: 4rem;
+}
+
+.headline {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headline1 {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.b1 {
+    padding: 0 1rem 0 0;
+    border-right: 2px solid #bfcfd7;
+}
+
+.b2 {
+    padding: 0 1rem;
+    border-right: 2px solid #bfcfd7;
+}
+
+.b3 {
+    padding: 0 0 0 1rem;
+}
+
+.website1 {
+    padding: 2rem 0 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.b4 {
+    display: flex;
+    text-align: center;
+    padding: 2rem 0 2rem 5rem;
+
+}
+
+.b5 {
+    display: flex;
+    text-align: center;
+    padding: 3.4rem 0 3.4rem 5rem;
+}
+
+.website2 {
+    padding: 0 1rem 0 0;
+}
+
+.website3 {
+    padding: 0 0 0 1rem;
+}
+
+.wechat1 {
+    padding: 4rem 0.5rem 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wechatphoto {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.method p {
+    margin: 0 1rem;
+    font-size: 0.7rem;
+}
+
+.official {
+    background-color: #29b078;
+    text-align: center;
+    padding: 1rem;
+}
