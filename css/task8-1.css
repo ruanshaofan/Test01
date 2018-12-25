@@ -8,7 +8,9 @@ body {
     background-color: #f0f0f0;
     position: relative;
 
+
 }
+
 .header {
     background-color: #ffffff;
 }
@@ -60,8 +62,18 @@ body {
     display: flex;
     align-items: center;
 }
-.nav2 :hover {
-    border-bottom: 2px solid #ffffff;
+.nav2 a {
+
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    line-height: 5rem;
+
+
+}
+.nav2 a:hover {
+    border-bottom: 5px solid #ffffff;
+    color: #FFFFFF;
 }
 .box1 {
     margin: 0 0 0 1rem;
@@ -136,7 +148,7 @@ h3 {
 
 .method, .method p {
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     margin: 3rem 0;
 }
@@ -201,13 +213,20 @@ h3 {
     background-color: #fff;
 }
 
+.photo:hover {
+    box-shadow: 0 0 3px 0 rgb(168, 168, 168);
 
-.photo.col-md-2 {
-    width: 20% ;
-    /*text-align: center;*/
-    /*background-color: white;*/
 
 }
+.photo.col-md-2 {
+    width: 20% ;
+    text-align: center;
+    background-color: white;
+
+}
+
+
+
 
 .col-md-2 img {
     height: 100px;
@@ -261,11 +280,11 @@ h3 {
     text-align: center;
     border-radius: 50%;
     background-color: #bfcfd7;
-    margin: 0 1rem .7rem 0;
+    margin: 0 1rem 0 0;
 }
-/*.A p:hover {*/
-    /*border-bottom: 1px solid #ffffff;*/
-
+.A p:hover {
+    border-bottom: 1px solid #ffffff;
+}
 .footer {
     background-color: #29b078;
     color: #fff;

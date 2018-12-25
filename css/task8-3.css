@@ -8,93 +8,105 @@ body {
     background-color: #f0f0f0;
     position: relative;
 
+
 }
 
-.firstone {
+.header {
+    background-color: #ffffff;
+}
+.top1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 4rem;
     background-color: #fff;
-    color: #29b078;
+    color: green;
 }
 
-.phone {
-    padding-left: 1rem;
-}
+
 .logo {
     display: flex;
     justify-content: flex-end;
-    padding-right: 1rem;
 }
 
 .logo img {
     margin: 0 0 0 1rem;
 }
-.ssss {
+
+.top2 {
     height: 4rem;
     background-color: white;
 
 }
 
 .firstone1 {
-    position: absolute;
-    right: 0;
     line-height: 4rem;
-    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 /*第一部分结束*/
-
+.top3 {
+    background-color: #29b078;
+}
 .nav_n {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    background-color: #29b078;
+    width: 100%;
 }
 
-.nav1 {
-    padding-left: 1rem;
-}
 .nav2 {
     display: flex;
     align-items: center;
-    padding-right: 1rem;
 }
-.nav2 :hover {
-    border-bottom: 2px solid #ffffff;
-}
+.nav2 a {
 
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    line-height: 5rem;
+
+
+}
+.nav2 a:hover {
+    border-bottom: 5px solid #ffffff;
+    color: #FFFFFF;
+}
 .box1 {
     margin: 0 0 0 1rem;
     color: #fff;
     line-height: 5rem;
 }
-@media (max-width: 991px) {
-    .dropdown {
-        height: 8rem;
-        background-color: #29b078;
-        /*确定优先级*/
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1rem;
-    }
+
+
+
+.dropdown {
+    background-color: #29b078;
+}
+
+.top4 {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .dropdown img {
     background-color: #29b078;
 }
-.open>.dropdown-menu {
+
+.open > .dropdown-menu {
     display: block;
     text-align: center;
 }
+
 .dropdown-menu {
     width: 100%;
     top: 100%;
     font-size: 1.5rem;
     background-color: #29b078;
-
 }
 
 /*第二部分结束*/
@@ -138,9 +150,11 @@ ul {
     color: green;
     /*font-size: 0.7rem;*/
     padding-left: 45%;
+
 }
 a {
     text-decoration:none;
+    /*color: #FFFFFF;*/
 }
 
 .project2 p:hover {
@@ -171,9 +185,10 @@ ul p:hover::before {
 .part {
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
     border-bottom: 1px solid #f0f0f0;
     background-color: white;
+    color: darkgray;
 }
 
 .part img {
@@ -183,8 +198,9 @@ ul p:hover::before {
 
 /*第六部分结束*/
 .part1 {
-    padding: 4rem;
+    padding: 2rem;
     background-color: white;
+    color: darkgray;
 }
 
 /*第七部分结束*/
@@ -192,81 +208,83 @@ ul p:hover::before {
     background-color: #29b078;
     color: #fff;
     margin-top: 4rem;
-}
+    border-bottom: 1px solid #ffffff;
 
+}
 .headline {
     padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .headline1 {
     padding: 3rem 0;
     display: flex;
     align-items: center;
-}
 
+}
 .b1 {
-    padding: 0 1rem 0 0;
+    padding: 0 1rem  0 0;
     border-right: 2px solid #bfcfd7;
 }
-
 .b2 {
-    padding: 0 1rem;
+    padding: 0 1rem ;
     border-right: 2px solid #bfcfd7;
-}
 
+}
 .b3 {
     padding: 0 0 0 1rem;
 }
 
+
+
 .website1 {
-    padding: 2rem 0 2rem 5rem;
+    padding: 2rem 0 ;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .b4 {
     display: flex;
     text-align: center;
-    padding: 2rem 0 2rem 5rem;
+    padding: 2rem 0 ;
 
 }
-
 .b5 {
     display: flex;
     text-align: center;
-    padding: 3.4rem 0 3.4rem 5rem;
-}
+    padding: 3.4rem 0 ;
 
-.website2 {
-    padding: 0 1rem 0 0;
 }
-
+.website2{
+    padding: 0 1rem 0 0 ;
+}
 .website3 {
     padding: 0 0 0 1rem;
 }
-
 .wechat1 {
     padding: 4rem 0.5rem 1rem;
     display: flex;
-    flex-direction: row-reverse;
+    /*flex-direction: row-reverse;*/
 }
-
 .wechatphoto {
-    display: flex;
-    flex-direction: row-reverse;
+    /*display: flex;*/
+    /*flex-direction: row-reverse;*/
 }
-
 .method p {
     margin: 0 1rem;
     font-size: 0.7rem;
 }
 
+
 .official {
     background-color: #29b078;
     text-align: center;
     padding: 1rem;
+
+}
+
+i {
+    color: red;
+    margin-left:0.3rem;
 }

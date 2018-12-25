@@ -8,9 +8,13 @@ body {
     background-color: #f0f0f0;
     position: relative;
 
+
 }
 
-.firstone {
+.header {
+    background-color: #ffffff;
+}
+.top1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,76 +23,85 @@ body {
     color: green;
 }
 
-.phone {
-    padding-left: 6rem;
-}
+
 .logo {
     display: flex;
     justify-content: flex-end;
-    padding-right: 6rem;
 }
 
 .logo img {
     margin: 0 0 0 1rem;
 }
-.ssss {
+
+.top2 {
     height: 4rem;
     background-color: white;
 
 }
 
 .firstone1 {
-    position: absolute;
-    right: 0;
     line-height: 4rem;
-    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 /*第一部分结束*/
-
+.top3 {
+    background-color: #29b078;
+}
 .nav_n {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5rem;
-    background-color: #29b078;
+    width: 100%;
 }
 
-/*.nav1 {*/
-    /*padding-left: 6rem;*/
-/*}*/
 .nav2 {
     display: flex;
     align-items: center;
-    padding-right: 6rem;
 }
-.nav2 :hover {
-    border-bottom: 2px solid #ffffff;
-}
+.nav2 a {
 
+    text-decoration: none;
+    color: #fff;
+    margin-left: 2rem;
+    line-height: 5rem;
+
+
+}
+.nav2 a:hover {
+    border-bottom: 5px solid #ffffff;
+    color: #FFFFFF;
+}
 .box1 {
     margin: 0 0 0 1rem;
     color: #fff;
     line-height: 5rem;
 }
-@media (max-width: 991px) {
-    .dropdown {
-        height: 8rem;
-        background-color: #29b078;
-        /*确定优先级*/
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 1rem;
-    }
+
+
+
+.dropdown {
+    background-color: #29b078;
+}
+
+.top4 {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .dropdown img {
     background-color: #29b078;
 }
-.open>.dropdown-menu {
+
+.open > .dropdown-menu {
     display: block;
     text-align: center;
 }
+
 .dropdown-menu {
     width: 100%;
     top: 100%;
@@ -243,6 +256,8 @@ body {
     background-color: #29b078;
     color: #fff;
     margin-top: 4rem;
+    border-bottom: 1px solid #ffffff;
+
 }
 .headline {
     padding: 2rem 0;
