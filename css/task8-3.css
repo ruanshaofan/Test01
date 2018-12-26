@@ -54,7 +54,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
+    height: 5.2rem;
     width: 100%;
 }
 
@@ -68,11 +68,12 @@ body {
     color: #fff;
     margin-left: 2rem;
     line-height: 5rem;
+    border-bottom: 2px solid #29b078;
 
 
 }
 .nav2 a:hover {
-    border-bottom: 5px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
     color: #FFFFFF;
 }
 .box1 {
