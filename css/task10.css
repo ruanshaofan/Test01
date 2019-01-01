@@ -3,9 +3,12 @@
     border: 0;
 }
 
-body {
-    background-color: #fff;
+html{
+    font-size: 62.5%;
 }
+body {
+     background-color: #fff;
+ }
 
 .header {
     background-color: #1d7ad9
@@ -103,58 +106,63 @@ a {
     border-radius: 5px;
 }
 
-#progressBar div span {
-    position: absolute;
-    display: inline-block;
-    background: #ff7f02;
-    height: 10px;
-    width: 25%;
-    border-radius: 5px;
+.progressBar{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+.box1 {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.wire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-radius: 10px;
+    width: 8rem;
+    background-color: darkgray;
 }
 
-#progressBar > span {
-    position: absolute;
-    top: 0;
-    margin-top: -5px;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #ddd;
+
+
+.circle {
+    width: 2rem;
+    height: 2rem;
+    background-color: darkgray;
+    border: 1px solid darkgray;
+    line-height: 2rem;
+    color: white;
     border-radius: 50%;
-    background: #ff7f02;
-    margin-left: -10px;
-    color: #fff;
+    text-align: center;
 }
 
-#progressBar > span:nth-child(2) {
-    left: 12.5%;
-    background: #ff7f02;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.liucheng p {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
 }
 
-#progressBar > span:nth-child(3) {
-    left: 37.5%;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+.liucheng:hover {
+    color: #FF7F02;
 }
 
-#progressBar > span:nth-child(4) {
-    left: 62.5%;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.liucheng:hover .wire {
+    background-color: #FF7F02;
 }
 
-#progressBar > span:nth-child(5) {
-    left: 87.5%;
-    background: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.liucheng:hover .circle {
+    background-color: #FF7F02;
+    border: 1px solid #FF7F02;
+}
+
+.liucheng :hover.p {
+    color: #FF7F02;
 }
 
 /*第三部分结束*/
@@ -211,37 +219,10 @@ h4 {
 }
 
 .box3 {
-    /*padding: 0 1rem;*/
-    /*margin: 0 1rem;*/
+    padding: 0 1rem;
+    margin: 0 1rem;
 }
 
-.btn {
-    background-color: #fff;
-    border: 2px solid #e8e8e8;
-}
-.dropdown-menu {
-    position: absolute;
-    top: 85%;
-    right: 0;
-    /*left: 100%;*/
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 130px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
-}
 
 .radio2 {
     display: flex;
@@ -256,6 +237,7 @@ input {
     width: 5rem;
     line-height: 2rem;
     border: 2px solid #e8e8e8;
+
 }
 
 .box4 {
@@ -288,14 +270,14 @@ input {
 }
 
 .text {
-    width: 20%;
-    text-align: center;
-    background-color: #e15053;
-    font-size: 3rem;
-    border: 4px solid #e15053;
-    border-radius: 4px;
-    margin: 2rem 0 2rem 0;
-}
+     width: 20%;
+     text-align: center;
+     background-color: #e15053;
+     font-size: 3rem;
+     border: 4px solid #e15053;
+     border-radius: 4px;
+     margin: 2rem 0 2rem 0;
+ }
 
 /*第十一部分结束*/
 .footer {
@@ -312,11 +294,13 @@ input {
     align-items: center;
 }
 
-.footer1-left, p {
+.footer1-left {
     color: #999999;
     margin-top: 0.5rem;
     font-size: 2rem;
 }
+
+
 
 .footer1-center {
     align-items: center;
@@ -367,3 +351,18 @@ img {
 {
     text-decoration: none;
 }
+
+
+select {
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #000;
+    /**很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url(../img/task10/xl.png) no-repeat scroll right center transparent;
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding-right: 2rem;}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+   /*select.sty1::-ms-expand { display: none; }*/
