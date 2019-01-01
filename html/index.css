@@ -1,0 +1,112 @@
+.view .view1 {
+  text-align: center;
+  margin: 3rem 0; }
+  .view .view1 img {
+    margin: 3rem 0;
+    height: 50px; }
+.view h3, .view .view1 p {
+  margin: 4rem 0; }
+.view .view2 {
+  margin: 5rem 0 5rem 0; }
+  .view .view2 .message {
+    padding: 3rem 0 2rem 6rem;
+    font-size: 2rem;
+    border-left: 2px dashed #bfcfd7; }
+
+.pattern h3 {
+  text-align: center;
+  margin: 2rem 0; }
+.pattern .method {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0; }
+  .pattern .method .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 3rem;
+    color: green;
+    box-shadow: darkgrey 1px 1px 1px 1px; }
+  .pattern .method p {
+    margin: 0 1rem;
+    font-size: 0.7rem; }
+
+.show {
+  margin: 2rem 0; }
+  .show h3 {
+    text-align: center;
+    margin: 2rem 0; }
+  .show .student {
+    text-align: center; }
+  .show .sample {
+    margin: 2rem 0;
+    padding: 2rem;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: darkgrey 1px 1px 1px 1px; }
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 0; }
+  .dot .box4, .dot .box5 {
+    width: 1rem;
+    height: 1rem;
+    background-color: #68cdd5;
+    margin-left: 2%;
+    border-radius: 50%; }
+  .dot .box5 {
+    background-color: #fff; }
+
+.row .partner {
+  background-color: #fff; }
+
+.photo.col-md-2 {
+  width: 20%; }
+
+.col-md-2 img {
+  height: 100px;
+  width: 190px;
+  margin: 2rem 0; }
+
+h3 {
+  text-align: center;
+  margin: 3rem 0; }
+
+h3 {
+  text-align: center;
+  margin: 3rem 0; }
+
+.footer2, .footer1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer2 .blogroll, .footer1 .blogroll {
+    text-align: center;
+    padding: 0;
+    height: 4rem; }
+  .footer2 .A, .footer1 .A {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*margin: 1rem 1rem 1rem 0;*/
+    font-size: 1rem;
+    height: 3rem; }
+    .footer2 .A .a1, .footer1 .A .a1 {
+      width: 0.5rem;
+      height: 0.5rem;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #bfcfd7;
+      margin: 0 1rem .7rem 0; }
+
+/*# sourceMappingURL=index.css.map */
