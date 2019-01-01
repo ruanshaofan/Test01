@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap 实例 - 响应式的导航栏</title>
+    <style>
+        #box{
+            margin:0 auto;
+            width: 306px;
+            height: 306px;
+            border: 1px solid red;
+
+        }
+        #box div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <div onclick="changeColor(this)"></div>
+    <input class="hover_blue" type="radio" name="type" id="typ2">
+</div>
+<script>
+    function changeColor(elem){
+        var red = parseInt(Math.random()*256);
+        var blue = parseInt(Math.random()*256);
+        var green = parseInt(Math.random()*256);
+        elem.style.backgroundColor ="rgb("+red+","+blue+","+green+")";
+    }
+</script>
+
+
+</body>
+</html>
