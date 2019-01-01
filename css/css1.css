@@ -1,4 +1,4 @@
-.box{
+div{
     width:30% ;
     height: 30vw;
     background-color: orange;
@@ -6,4 +6,17 @@
     margin-bottom: 2%;
     border-radius: 20px;
     float:left;
+}
+#btn1,#btn2{
+    width: 100%;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    font-size: 2rem;
+    border-radius:20px;
+    color: #fff;
+    transition: background 2s ease,transform 2s ease-in 1s;
+
+}
+button:hover {
+    background-color: orange;
 }
