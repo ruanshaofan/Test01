@@ -1,0 +1,49 @@
+/*公用样式表：*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,form{
+    margin:0;
+    padding: 0;
+}
+ul,ol{
+    padding-left:0;
+    list-style-type:none;
+}
+a:link, a:visited{ color:#04C; text-decoration:none;}
+a:hover{ color:#F60;
+    /*text-decoration:underline;*/
+}
+a {text-decoration:none;}
+ul, ol {list-style:none;}
+
+.bgf0 {background-color: #f0f0f0;}
+.bg29 {background-color: #29bde0;}
+.bgef {background-color: #eff0f4;}
+.bgf {background-color: #ffffff;}
+.bgb9 {background-color: #b9e9f5;}
+.bn {border: none}
+.dib {display: inline-block;}
+.df {display: flex;}
+.dn {display: none;}
+
+
+.tdn {text-decoration: none;}
+
+.jcs {justify-content:start;}
+.jcc {justify-content: center;}
+.jcsa {justify-content: space-around;}
+.jcsb {justify-content: space-between;}
+.jcfs {justify-content: flex-start;}
+.aic {align-items: center;}
+.fdc {flex-direction: column;}
+.f3 {font-size: 3rem}
+
+
+.c0 {color: #000000}
+.cf {color: #fff}
+
+.pa {position: absolute;}
+.w6 {width: 6rem}
+
+
+.ml-2 {margin-left:2rem }
+.mr-2 {margin-right: 2rem}
+.pf {position: fixed}

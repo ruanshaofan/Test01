@@ -1,0 +1,5 @@
+/*xxx页面入口样式文件style.css*/
+@import 'base.css';/*页面基础样式*/
+@import 'index.css';
+@import 'header.css';
+@import 'footer.css';
