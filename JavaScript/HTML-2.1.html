@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参数设置</title>
+    <link rel="stylesheet" href="task2-1.css">
+    <script src="../JavaScript/task2-first.js"></script>
+</head>
+<body>
+<div class="top">
+    <img onclick="back()" src="../img/task8.1/Back.png" alt="" ">
+    <span>参数设置</span>
+    <img src="../img/task8.1/circled-help.png" alt="">
+</div>
+<div class="contain">
+    <div class="topone">
+        <p><strong>玩家配比</strong></p>
+    </div>
+    <div class="middle">
+        <div class="middle1">
+            <img src="../img/task8.1/task-Avatar.png" alt="">
+            杀手<span id="killer"></span>人
+        </div>
+        <div class="middle2">
+            <img src="../img/task8.1/task-Avatar.png" alt="">
+            平民<span id="people"></span>人
+        </div>
+    </div>
+    <div class="kong"></div>
+    <div class="click">
+        <div class="import">
+            请输入人数
+            <input type="text" id="total" value="4">
+            <span>玩家总人数为4-18人</span>
+        </div>
+        <div class="progress">
+            <button><img id="reduce" onclick="down()" src="../img/task8.1/add-.png" alt=""></button>
+            <input type="range" id="range" onchange="range()" step="1" value="0" max="18" min="4"
+                   style="background-size: 0% 100%;">
+            <button><img id="add" onclick="up()" src="../img/task8.1/add+.png" alt=""></button>
+        </div>
+    </div>
+    <button class="button" onclick="task3()">去发牌</button>
+</div>
+<script>
+    var killer = document.getElementById("killer");
+    var people = document.getElementById("people");
+    var total = document.getElementById("total");
+    //获取dom节点
+    var reduce = document.getElementById("reduce");
+    console.log(reduce);
+    var add = document.getElementById("add");
+    console.log(add);
+
+    total.onblur = function () {
+        console.log(total.value / 4);
+        Math.round(total.value / 4);
+        console.log(total.value / 4);
+        if (total.value > 4 && total.value <= 18) {
+            killer.innerHTML = Math.round(total.value / 4);
+            people.innerHTML = total.value - Math.round(total.value / 4);
+        } else if (total.value > 18 || total.value < 4) {
+            alert("请输入正确的人数")
+        }
+        sessionStorage.setItem("total", total.value)
+        sessionStorage.setItem("killer", Math.round(total.value / 4))
+        sessionStorage.setItem("people", total.value - Math.round(total.value / 4))
+    };
+    // 实时监听input框输入变化事件
+    total.oninput = function () {
+        document.getElementById("range").value = total.value;
+    }
+
+
+    //为滑动条添加onchange事件
+    function range() {
+        var range = document.getElementById("range");
+        console.log(range);
+        // 将滑动条的值传给输入框
+        slider = document.getElementById("range").value;
+        document.getElementById('total').value = slider;
+        //将值分配给平民和杀手
+        killer.innerHTML = Math.round(total.value / 4);//杀手人数
+        people.innerHTML = total.value - Math.round(total.value / 4);//平民人数
+
+        sessionStorage.setItem("killer", Math.round(total.value / 4))
+        sessionStorage.setItem("people", total.value - Math.round(total.value / 4))
+    }
+
+    //添加事件
+    function down() {
+        slider = document.getElementById("range").value;
+        if (slider <= 4) {
+            alert("不能再少啦");
+        } else {
+            slider--;
+        }
+        document.getElementById("range").value = slider;
+        document.getElementById('total').value = slider;
+        killer.innerHTML = Math.round(total.value / 4);
+        people.innerHTML = total.value - Math.round(total.value / 4);
+
+        sessionStorage.setItem("total", total.value)
+        sessionStorage.setItem("killer", Math.round(total.value / 4))
+        sessionStorage.setItem("people", total.value - Math.round(total.value / 4))
+    }
+
+    //获取dom节点，为“+”图片添加点击事件，
+    function up() {
+        slider = document.getElementById("range").value;
+        if (slider > 18) {
+            alert("不能再多啦");
+        } else {
+            slider++;
+        }
+        document.getElementById("range").value = slider;
+        document.getElementById('total').value = slider;
+        killer.innerHTML = Math.round(total.value / 4);
+        people.innerHTML = total.value - Math.round(total.value / 4);
+        // 数据传入sessionstorage
+        sessionStorage.setItem("total", total.value);
+        sessionStorage.setItem("killer", Math.round(total.value / 4));
+        sessionStorage.setItem("people", total.value - Math.round(total.value / 4))
+
+    }
+
+
+    function task3() {
+        //人数确定后，要创建出对应数量的玩家，
+        // 然后给玩家分配身份，
+        // 最后，将玩家数组传到下个页面
+
+        var totalUser = document.getElementById("range").value; //获取输入框的值
+        console.log("total user========" + totalUser);
+        // 创建一个新数组，将输入框的值传入这和新数组里
+        var arr = new Array()
+        for (i = 0; i < totalUser; i++) {//循环遍历数组内的玩家身份
+            var identity;
+            // if (i == 1 || i ==3){
+            if (i=0,i<totalUser,i+=3) {
+                identity = 'killer'//给玩家赋予身份，数组内第二第四个人的身份是杀手，那么其他的均为贫民
+            } else {
+                identity = 'pinmin'
+            }
+
+            // 创建一个uers对象
+            var user = {
+                id: i,
+                identity: identity,
+            };
+            // 将arr数组中的 玩家人数和身份传入user对象中
+            arr.push(user)
+        }
+
+        // localStorage需要解析这个对象就必须将这和arr对象转化为json格式的字符串
+        // 定义一个data变量来接受这个json格式的字符串
+        var data = JSON.stringify(arr);
+        location.href = 'html-2.2.html';
+        // 将这个json格式的字符串传递给下个页面
+        window.localStorage.users = data;
+    }
+
+
+</script>
+</body>
+</html>

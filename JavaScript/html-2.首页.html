@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!--<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../JavaScript/task2.css">
+    <script src="../JQuery/jquery-1.12.0.min.js"></script>
+    <script src="../JavaScript/task2-first.js"></script>
+</head>
+<body>
+<div class="header">
+    <button type="button">
+        <img src="../img/task-7/task-1-1.png" alt="">
+    </button>
+</div>
+<div class="container">
+    <div class="top">
+        <div class="header1">
+            <span>上次游戏：捉鬼猜词版</span>
+            <img src="../img/task-7/task-1-2.png" alt="">
+        </div>
+    </div>
+    <div class="content">
+        <div class="tab current">
+            <div class="box2">
+                <div class="header2">
+                    <p>捉鬼游戏</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="header3" >
+                    <p onclick="jump()">简化版 </p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">猜词版 </p>
+                    <!--创建三角形-->
+                    <span class="caret"></span>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+
+            <div class="box3">
+                <div class="header3" >
+                    <p onclick="jump()">白痴版 </p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+        </div>
+        <!--隐藏-->
+        <div class="tab">
+            <div class="box2">
+                <div class="header2">
+                    <p >捉鬼游戏1</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">简化版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <span class="caret1"></span>
+                    <p onclick="jump()">猜词版</p>
+                    <span class="caret"></span>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">白痴版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="box2">
+                <div class="header2">
+                    <p>捉鬼游戏2</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">简化版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <span class="caret1"></span>
+                    <p onclick="jump()">猜词版</p>
+                    <span class="caret"></span>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">白痴版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+        </div>
+        <div class="tab">
+            <div class="box2">
+                <div class="header2">
+                    <p>捉鬼游戏3</p>
+                </div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">简化版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <span class="caret1"></span>
+                    <p onclick="jump()">猜词版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+            <div class="box3">
+                <div class="header3">
+                    <p onclick="jump()">白痴版</p>
+                </div>
+                <div class="text4">有1133个用户正在玩此款游戏</div>
+            </div>
+        </div>
+        <div class="dot">
+            <div class="box5 active"></div>
+            <div class="box5"></div>
+            <div class="box5"></div>
+            <div class="box5"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var dot = $(".box5");
+    var caret = $(".caret");
+    var caret1 = $(".caret1");
+    $(function () {
+        console.log(caret);
+        //隐式遍历
+        dot.click(function () {
+            // console.log(1111);
+            var index = dot.index();
+            $(this).addClass('active').siblings().removeClass('active');
+            // console.log(index);
+            $(".tab").eq(index).addClass('current').siblings().removeClass('current');
+        });
+        // 向右点击
+        caret.click(function () {
+            var index = caret.index($(this));
+            console.log(index);
+            index++;
+            dot.eq(index).addClass('active').siblings().removeClass('active');
+            $(".tab").eq(index).addClass('current').siblings().removeClass('current');
+        });
+        // 向左点击
+        caret1.click(function () {
+            var index = caret1.index($(this)) + 1;
+            console.log(index);
+            index--;
+            dot.eq(index).addClass('active').siblings().removeClass('active');
+            $(".tab").eq(index).addClass('current').siblings().removeClass('current');
+        })
+        window.jQuery = window.$ = jQuery;
+    })
+</script>
+
+
+</body>
+</html>
+

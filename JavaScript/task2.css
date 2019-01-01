@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.header {
+    width: 100%;
+    height: 9rem;
+    background-color: #29bde0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.top {
+    height: 8rem;
+    background-color: #eff0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin: 4rem 0;
+
+}
+
+.header1 {
+    width: 90%;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.header1 span {
+    display: inline-block;
+    padding-right: 18rem;
+    padding-left: 18rem;
+}
+
+.box2 {
+    height: 10rem;
+    background-color: #eff0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+.box2 p {
+    color: #fbb435;
+}
+
+
+
+
+
+.header2 {
+    width: 100%;
+    line-height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 4px solid #000000;
+}
+
+.container .content .tab  {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+    /*display: block;*/
+}
+.container .content .tab {
+    display: none;
+}
+.container .content .tab.current{
+    display: block;
+}
+a {
+    /*text-decoration: none ;定义文本修饰:下划线 文本颜色*/
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.box3 {
+    height: 30rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+
+}
+
+.header3 {
+    line-height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #83b09a;
+}
+
+.header3 p {
+    display: inline-block;
+    padding-right: 20rem;
+    padding-left: 20rem;
+    background-color: #29bde0;
+    color: #ffffff;
+}
+
+.text4 {
+    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+}
+
+.dot {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background-color: #ffffff;
+    margin-left: 5%;
+
+}
+
+.box5.active {
+    background-color: #29bde0;
+}
+
+.box5 {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 2%;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    /*transparent表示通透明，顺序为：上-右-下-左*/
+    border-color: transparent transparent transparent #ffff00;
+    position: absolute;
+    right: 6rem;
+}
+.caret1 {
+    width: 0;
+    height: 0;
+    border: 30px solid;
+    /*transparent表示通透明，顺序为：上-右-下-左*/
+    border-color: transparent #ffff00  transparent transparent ;
+    position: absolute;
+    left: 6rem;
+}
+
+.container .content .tab {
+    display: none;
+}
+.container .content .tab.current{
+    display: block;
+}

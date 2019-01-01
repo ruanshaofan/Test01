@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>九宫格</title>
+    <style type="text/css">
+        .box {
+            width: 30%;
+            height: 30vw;
+            background-color: orange;
+            margin-left: 2%;
+            margin-bottom: 2%;
+            border-radius: 20px;
+            float: left;
+        }
+        #btn1,#btn2{
+            width: 100%;
+            padding: 2rem 0;
+            margin: 2rem 0;
+            font-size: 2rem;
+            border-radius:20px;
+            color: #fff;
+            transition: background 2s ease,transform 2s ease-in 1s;
+        }
+        button:hover{
+            background:#FFA600;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<button id="btn1">开始闪</button>
+<button id="btn2">结束闪</button>
+<!--js部分-->
+<script>
+    // 1.获取九宫格中的小格子DOM
+    var box = document.getElementsByClassName("box");
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+
+    //声明一个arr-color的变量，变量类型为一个数组；
+    var arr_color = ["#9d5167", "#e2512a", "#6be22a", "#163107", "#1cb45c", "#a66824", "#15c7c5", "#8507c7", "#c707b7"];
+    console.log(box);
+
+    //声明一个arr的变量将获取到的九个box盒子转换成一个数组
+    var arr = Array.prototype.slice.call(box);//Array.prototype.slice.call()能将具有length属性的对象转成数组，
+    console.log(arr);
+
+    // 随机获取数组中任意个数的函数
+    function getArrItem(arr, num) {          //从一个给定的数组arr中,随机返回num个不重复项
+        var temp_array = new Array();        //新建一个数组,将传入的数组复制过来,用于运算,而不要直接操作传入的数组;
+        for (var index in arr) {    //for (var index in arr)相当于for (var =i;i<arr.length;i++)
+            temp_array.push(arr[index]);
+        }
+        var return_array = new Array();       //取出的数值项,保存在此数组
+        for (var i = 0; i < num; i++) {
+            if (temp_array.length > 0) {       //判断如果数组还有可以取出的元素,以防下标越界
+                var arrIndex = Math.floor(Math.random() * temp_array.length);   //在数组中产生一个随机索引
+                //将此随机索引的对应的数组元素值复制出来
+                return_array[i] = temp_array[arrIndex];
+                //然后删掉此索引的数组元素,这时候temp_array变为新的数组
+                temp_array.splice(arrIndex, 1);
+            } else {
+                break;
+            }
+        }
+        return return_array;//返回值
+    }
+
+    // 2.随机取得小格子中的3个格子
+    console.log(getArrItem(arr, 3));//从（arr（box）随机获取三个box
+
+    console.log(getArrItem(arr_color, 3));//从（arr-colors）数组中随机获取三个颜色；
+
+    // 设置定时器
+    var timer = "null";//声明一个timer的变量，变量值为空  是一个全局变量。
+    function one() {
+        clearInterval(timer);//要使用 clearInterval() 方法, 在创建计时方法时必须声明使用全局变量：
+
+
+        timer = setInterval(function () {
+            // setInterval() 间隔指定的毫秒数不停地执行指定的代码;
+            // setInterval() 第一个参数是函数（function）。第二个参数间隔的毫秒数
+            for (var i = 0; i < 9; i++) {
+                arr[i].style.backgroundColor = '#ffa600';
+            }
+            var box_array = getArrItem(arr, 3);//随机选出三个box
+            var colors = getArrItem(arr_color, 3);//随机选出三个颜色
+            // 4.将随机出来的颜色值分别添加到3个格子的样式上
+            for (var i = 0; i < 3; i++) {
+                box_array[i].style.backgroundColor = colors[i];
+            }
+        }, 1000);
+        btn1.removeEventListener("click",one);
+    }
+
+    btn1.addEventListener("click", one);
+
+
+    btn2.onclick = function () {
+        clearInterval(timer);
+        for (var i = 0; i < 9; i++) {
+            arr[i].style.backgroundColor = '#ffa600';
+        }
+    }
+
+</script>
+</body>
+</html>

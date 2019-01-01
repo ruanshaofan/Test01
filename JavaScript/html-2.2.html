@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看身份</title>
+    <link rel="stylesheet" href="task2-2.css">
+</head>
+<body>
+<div class="top">
+    <img src="../img/task8.1/Back.png" alt="">
+    <span>查看身份</span>
+    <img src="../img/task-7/task-2-2.png" alt="">
+</div>
+<div class="main">
+    <div class="card ac">
+        <div class="circle">1</div>
+        <img src="../img/task8.1/图层-2.png" alt="">
+        <div class="send ac hide">
+            <img src="../img/task8.1/wow.png" alt="">
+        </div>
+    </div>
+</div>
+
+<script>
+    var users = window.localStorage.users;
+    var resutl =JSON.parse(users);//JSON.parse()【从一个字符串中解析出json对象】
+    console.log(resutl);
+    //json格式的字符串，转成数组
+    for ( var i = 0; i <resutl.length; i++){
+        console.log(resutl[i]);
+    }
+</script>
+
+
+
+</body>
+</html>
