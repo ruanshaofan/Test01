@@ -1,0 +1,102 @@
+html
+{
+  font-size: 62.5%;
+}
+$backgroundColor:#5fc0cd;
+$width:100%;
+$color:#fff;
+@mixin inputSize {
+  border: none;
+  height: 6rem;
+  font-size: 1.5rem;
+  color: #bfcfd7;
+  outline: none;
+}
+@mixin iphoneLocked {
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+@mixin  imgProperty {
+  vertical-align: middle;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-right: 2px solid #b1b9bb;
+  padding-right: 1.5rem;
+}
+
+body{
+  margin:0;
+  padding:0;
+  background-color:#eff0f4;
+}
+
+header {
+  background-color: $backgroundColor;
+  color: $color;
+  width:$width;
+  height:6rem;
+  position: relative;
+  .register {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    padding: 2rem;
+  }
+  .login{
+    font-size: 1.8rem;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    padding:2rem;
+  }
+  .close{
+    font-size: 1.8rem;
+    position: absolute;
+    right:0;
+    padding: 2rem;
+
+  }
+}
+main {
+  .iphone,.locked {
+    @include iphoneLocked;
+  }
+  .iphone img ,.locked img {
+    @include imgProperty;
+  }
+  .iphone input,.locked input {
+    @include inputSize;
+
+  }
+}
+
+.botton{
+  width: $width;
+  height: 6rem;
+  background-color: $backgroundColor;
+  position: relative;
+  margin-top: 4rem;
+  .login1{
+    font-size: 2rem;
+    color: #f3f4f6;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+  }
+}
+.forget {
+  width: $width;
+  height: 10rem;
+  position: relative;
+  .text{
+    position: absolute;
+    font-size: 2rem;
+    color:#5fc0cd;
+    right: 1rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,164 @@
+html {
+  font-size: 62.5%;
+}
+
+$backgroundColor: #fff;
+$width: 100%;
+@mixin flexProperty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexProperty1 {
+  display: flex;
+  align-items: center;
+}
+
+@mixin text5 {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+@mixin span6 {
+  padding: 1rem 2rem;
+}
+
+@mixin span5 {
+  padding: 1rem 2rem;
+  border-right: 2px solid #f0f0f0;
+  margin: 1rem 0;
+  white-space: nowrap;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $backgroundColor;
+}
+
+header {
+  position: relative;
+  background-color: #68cdd5;
+  width: $width;
+  height: 6rem;
+  .return {
+    position: absolute;
+    width: 10%;
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+  .homepage {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 2rem;
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.box {
+  overflow: auto;
+  width: $width;
+  height: 55rem;
+  .main {
+    height: 12rem;
+    width: $width;
+    .doctor {
+      display: block;
+      position: absolute;
+      background: url("../img/doctor.png") no-repeat;
+      background-size: 100% 100%;
+      width: $width;
+      height: 12rem;
+      .box1 {
+        height: 12rem;
+        width: 100%;
+        @include flexProperty1;
+        .women img {
+          @include flexProperty;
+          height: 6rem;
+          padding-left: 2rem;
+        }
+        .box2 {
+          font-size: 1rem;
+          padding-left: 2rem;
+          .address {
+            @include flexProperty;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .major {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    border-bottom: 1px solid #cccccc;
+  }
+  .major p {
+    border-left: 3px solid #68cdd5;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+  }
+  .main1 {
+    @include flexProperty1;
+    height: 4rem;
+    border-bottom: 1px solid #f0f0f0;
+    .text4 {
+      @include flexProperty;
+    }
+    .text4 img {
+      padding: 0.5rem 1rem;
+    }
+    .span {
+      padding-right: 1rem;
+    }
+  }
+  .text5 {
+    @include text5;
+    .span5 {
+      @include span5;
+    }
+    .span6 {
+      @include span6;
+    }
+  }
+}
+
+footer {
+  position: fixed;
+  @include flexProperty1;
+  justify-content: space-around;
+  bottom: 0;
+  width: $width;
+  height: 8rem;
+  background-color: $backgroundColor;
+  button {
+    width: 40%;
+    padding: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    font-size: 2rem;
+    border: 2px solid #68cdd5;
+  }
+  .button1 {
+    background-color: $backgroundColor;
+    color: #68cdd5;
+  }
+  .button2 {
+    background-color: #68cdd5;
+    color: #ffffff;
+  }
+}
+
+
+

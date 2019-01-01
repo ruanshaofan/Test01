@@ -1,0 +1,76 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eff0f4; }
+
+header {
+  background-color: #5fc0cd;
+  color: #fff;
+  width: 100%;
+  height: 6rem;
+  position: relative; }
+  header .register {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    padding: 2rem; }
+  header .login {
+    font-size: 1.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem; }
+  header .close {
+    font-size: 1.8rem;
+    position: absolute;
+    right: 0;
+    padding: 2rem; }
+
+main .iphone, main .locked {
+  background-color: #ffffff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%; }
+main .iphone img, main .locked img {
+  vertical-align: middle;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  border-right: 2px solid #b1b9bb;
+  padding-right: 1.5rem; }
+main .iphone input, main .locked input {
+  border: none;
+  height: 6rem;
+  font-size: 1.5rem;
+  color: #bfcfd7;
+  outline: none; }
+
+.botton {
+  width: 100%;
+  height: 6rem;
+  background-color: #5fc0cd;
+  position: relative;
+  margin-top: 4rem; }
+  .botton .login1 {
+    font-size: 2rem;
+    color: #f3f4f6;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem; }
+
+.forget {
+  width: 100%;
+  height: 10rem;
+  position: relative; }
+  .forget .text {
+    position: absolute;
+    font-size: 2rem;
+    color: #5fc0cd;
+    right: 1rem;
+    margin-top: 1rem;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=task11.css.map */

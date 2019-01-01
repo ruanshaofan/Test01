@@ -1,0 +1,160 @@
+$text-align: center;
+
+@mixin flexs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin  circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 5rem;
+  min-height: 5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 3rem;
+  color: green;
+  box-shadow: darkgrey 1px 1px 1px 1px
+}
+@mixin sample {
+  margin: 2rem 0;
+  padding: 2rem ;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px ;
+  background-color: #fff;
+  box-shadow: darkgrey 1px 1px 1px 1px
+}
+@mixin dot {
+  @include flex;
+  width: 100%;
+  padding: 4rem 0;
+}
+@mixin zero {
+  width: 1rem;
+  height: 1rem;
+  background-color: #68cdd5;
+  margin-left: 2%;
+  border-radius: 50%;
+}
+
+.view {
+  .view1 {
+    text-align: $text-align;
+    margin: 3rem 0;
+    img {
+      margin: 3rem 0;
+      height: 50px;
+    }
+  }
+  h3, .view1 p {
+    margin: 4rem 0;
+  }
+  .view2 {
+    margin: 5rem 0 5rem 0;
+    .message {
+      padding: 3rem 0 2rem 6rem;
+      font-size: 2rem;
+      border-left: 2px dashed #bfcfd7;
+    }
+  }
+}
+.pattern {
+  h3 {
+    text-align: $text-align;
+    margin: 2rem 0;
+  }
+  .method {
+    @include flex;
+    margin: 3rem 0;
+    .circle {
+      @include circle;
+    }
+    p {
+      margin: 0 1rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+.show {
+  margin: 2rem 0;
+  h3 {
+    text-align: $text-align;
+    margin: 2rem 0;
+  }
+  .student {
+    text-align: $text-align;
+  }
+  .sample {
+    margin: 2rem 0;
+    padding: 2rem ;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px ;
+    background-color: #fff;
+    box-shadow: darkgrey 1px 1px 1px 1px
+  }
+}
+.dot {
+  @include flex;
+  width: 100%;
+  padding: 4rem 0;
+  .box4, .box5 {
+    width: 1rem;
+    height: 1rem;
+    background-color: #68cdd5;
+    margin-left: 2%;
+    border-radius: 50%;
+  }
+  .box5 {
+    background-color: #fff;
+  }
+}
+.row .partner  {
+  background-color: #fff;
+}.photo.col-md-2 {
+   width: 20%;
+ }
+.col-md-2 img {
+  height: 100px;
+  width: 190px;
+  margin: 2rem 0;}
+h3 {
+  text-align: $text-align;
+  margin: 3rem 0;
+
+}
+h3 {
+  text-align: $text-align;
+  margin: 3rem 0;
+}
+.footer2,.footer1 {
+  @include flexs;
+  .blogroll {
+    text-align: $text-align;
+    padding: 0;
+    height: 4rem;
+  }
+  .A {
+    @include flex;
+    text-align: $text-align;
+    /*margin: 1rem 1rem 1rem 0;*/
+    font-size: 1rem;
+    height: 3rem;
+
+    .a1 {
+      width: 0.5rem;
+      height: 0.5rem;
+      text-align: $text-align;
+      border-radius: 50%;
+      background-color: #bfcfd7;
+      margin: 0 1rem .7rem 0;
+    }
+  }
+
+}
+

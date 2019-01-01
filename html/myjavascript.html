@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<!--赋值运算-->
+<p id="myP"></p>
+<script>
+    var x = 5;//声明 x 并把5赋值还给x
+    var y = x + 5;//声明 y 并把x+5赋值给y
+    document.getElementById("myP").innerHTML = y;
+</script>
+
+<p class="demo">A Paragraph.</p>
+<button type="button" id="btn">点击这里</button>
+<script>
+    // function myFunction() {
+    //     document.getElementsByClassName("demo").innerHTML="My First JavaScript Function"
+    // }
+    window.onload = function () {//当页面加载完毕后台执行这个js代码
+        var btn = document.getElementById('btn');//
+        var demo = document.getElementsByClassName("demo")[0];
+        btn.onclick = function () {
+            demo.innerHTML = "My First JavaScript Function";
+            console.log(demo.innerHTML)
+        }
+    }
+</script>
+<!--对象方法-->
+<p id="demo1"></p>
+<script>
+    var person = {
+        firstName: "jiang",
+        lastName: "ruan",
+        id: 55666,
+        fullName: function () {
+            return this.firstName + "" + this.lastName;
+        }
+    };
+    document.getElementById("demo1").innerHTML = person.fullName();
+</script>
+<!--创建新的HTML元素——（节点）-appendchild()  将新元素添加带尾部-->
+<div id="first">
+    <p id="p1">你是我的眼</p>
+    <p id="p2">带我领略世间的变换</p>
+</div>
+<script>
+    var para = document.createElement("div");//创建一个新的div元素。
+    var node = document.createTextNode("你是我的眼");//向新的div元素中添加文本节点（文本内容）
+    para.appendChild(node);//将文本节点（文本内容）添加到新div元素中
+
+    var element = document.getElementById("first");//在已经存在的first元素中添加新建的div元素，
+    element.appendChild(para);//添加到已存在的元素中的尾部
+</script>
+<hr>
+<!--创建新的HTML元素——（节点）-insertBefore()  将新元素添加开始的位置-->
+<div id="first2">
+
+    <p id="p3">你是我的眼</p>
+    <p id="p4">带我领略世间的变换</p>
+</div>
+
+<script>
+    var para = document.createElement("div");//创建一个新的div元素。
+    var node = document.createTextNode("你是我的眼");//向新的div元素中添加文本节点（文本内容）
+    para.appendChild(node);//将文本节点（文本内容）添加到新div元素中
+
+    var element = document.getElementById("first2");//在已经存在的first元素中添加新建的div元素，
+    var child = document.getElementById("p3");//在已存在的p3元素前添加新建的div元素
+    element.insertBefore(para, child);//添加到已存在的元素中的开头位置
+</script>
+
+<script>
+    var person = new Object();
+    person.firstname = "John";
+    person.lastname = "Doe";
+    person.age = 50;
+    person.eyecolor = "blue";
+    document.write(person.firstname + " is " + person.age + " years old.");
+
+
+    <!--数组操作-->
+
+    // 创建数组：
+    // var arrayobj = new array();
+    // 创建一个数组并指定数组长度
+    // var arrayobj = new array(3);
+    // 创建一个数组并赋值
+    // var arrayobj = new array ["first","two","three","four"];
+    // 访问数组的元素
+    // var testGetArrvalue = arrayobj[1];//获取数组的元素值
+    // arrayobj[1]= "这是新值"; //给数组元素赋予新的值
+    // 4、数组元素的删除
+    //
+    // arrayobj.pop(); //移除最后一个元素并返回该元素值
+    //
+    // arrayobj.shift(); //移除最前一个元素并返回该元素值，数组中元素自动前移
+    //
+    // arrayobj.splice(deletePos,deleteCount); //删除从指定位置deletePos开始的指定数量deleteCount的元素，数组形式返回所移除的元素
+    // // 5、数组的截取和合并
+
+    // arrayObj.slice(start, [end]); //以数组的形式返回数组的一部分，注意不包括 end 对应的元素，如果省略 end 将复制 start 之后的所有元素
+
+    //
+    //
+    // // 6、数组的拷贝
+    //
+    // arrayObj.slice(0); //返回数组的拷贝数组，注意是一个新的数组，不是指向
+    //
+    // arrayObj.concat(); //返回数组的拷贝数组，注意是一个新的数组，不是指向
+    //
+    // // 7、数组元素的排序
+    // //
+    // arrayObj.reverse(); //反转元素（最前的排到最后、最后的排到最前），返回数组地址
+    //
+    // arrayObj.sort(); //对数组元素排序，返回数组地址
+
+    // // 8、数组元素的字符串化
+    //
+    // arrayObj.join(separator); //返回字符串，这个字符串将数组的每一个元素值连接在一起，中间用 separator 隔开。
+    //
+    // // toLocaleString,toString ,valueOf：//可以看作是join的特殊用法，不常用
+
+
+    function bubbleSort(arr) {
+        var i = arr.length;
+        while (i > 0) {
+            var pos = 0
+            for (var j = 0; j < i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    pos = j
+                    var temp = arr[j]
+                    arr[j] = arr[j + 1]
+                    arr[j + 1] = temp
+                }
+            }
+            i = pos
+        }
+        return arr
+    }
+
+    var arr = [3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48];
+    console.log(bubbleSort(arr));//[2, 3, 4, 5, 15, 19, 26, 27, 36, 38, 44, 46, 47, 48, 50]
+    //数据类型转换
+
+    // 显示数据类型装换
+    //number转换
+    var a = "123";//数值类型的字符串转换后返回的是字符串本身的数值
+    a = Number(a);
+    console.log(a);  //返回：123
+
+    var a = "csdds22";//转换的字符串不是一个数值类型的字符串的时候返回的值是“NuN”
+    a = Number(a);
+    console.log(a);   //返回：NN
+
+
+    // parseInt()
+    var a = "123uyyuy";   //忽略字符串前面的空格，直至找到第一个非空字符,还会将数字后面的非数字的字符串去掉。
+    a = parseInt(a);
+    console.log(a);   //返回：123  去掉了123后面的非数字的字符串。
+
+
+    var a = "dsdd12b3";    //如果第一个字符不是数字符号或者负号，返回NaN
+    a = parseInt(a);
+    console.log(a);   //返回值是NuN
+
+    var a = "1.899999999";      //如果一个字符串展示的浮点数，会将小数取整。（向下取整）
+    a = parseInt(a);d
+    console.log(a);   //返回值 ：1
+
+
+    // parseFloat()
+
+    var a = "123.4544544454";    //与parseInt一样，唯一区别是parseFloat可以保留小数。
+    a = parseFloat(a);
+    console.log(a);
+
+    // 转成字符串string
+    var a = 123;
+    a = String(a);
+    console.log(a);
+    console.log(typeof a);
+
+
+    var a = 123;
+    a = a.toString();
+    console.log(a);
+    console.log(typeof a);
+    // undefined，null不能用toString。
+
+
+    // 转boolean类型：
+    var a = "ture";
+    a = Boolean(a);
+    console.log(a);
+    console.log(typeof a);
+    //在进行boolean转换的时候所有的内容在转换以后结果都是true，除了：false、""（空字符串）、0、NaN、undefined
+    // 隐式数据类型转换
+    //字符串转换成number
+    var a = "123";
+    a = +a;
+    console.log(a);
+    console.log(typeof a);
+
+    // 数字转字符串
+    var a = 123;
+    a = a + "";
+    console.log(a);
+    console.log(typeof a);
+
+    // 数字转boolean
+    var a = 123;
+    a = !!a;
+    console.log(a);
+    console.log(typeof a);
+
+
+    // 条件语句
+    //     if语句
+    var a = 60;
+    if (a > 80) {
+        document.write("gongxi ");
+    } else {
+        document.write("<strong style= ' color:red;'>绿叶学习网是一个不错的网站！</strong>");
+    }
+
+    // if...else语句嵌套
+    var d = new Date();
+    var time = d.getHours();
+    if (time < 12) {
+        document.write("早上好！");    //如果小时数小于12则输出“早上好！”
+    }
+    else if (time > 12 && time < 18) {
+        document.write("下午好！");//如果小时数大于12并且小于18，输入“下午好！”
+    }
+    else {
+        document.write("晚上好！");//如果上面两个条件都不符合，则输出“晚上好！”
+    }
+
+    //for循环
+    for (var i = 0; i < 10; i++) {
+        document.write(i + "</br>");
+    }
+
+    // break的用法  看不太明白这块儿
+    var n = 50;  //设置连加最大值
+    var sum = 0;
+    for (var i = 0; i < 100; i++) {
+        if (i == (n + 1)) break;
+        sum += i;
+    }
+    document.write(sum);
+
+    // 截取
+    var str = " i love javascript ";
+    for (var i = 0; i < str.length; i++) {
+        if (str.charAt(i) >= "o") {
+            continue;
+        }
+        document.write(str.charCodeAt(i) + "</hr>");
+    }
+
+
+    //         函数
+    // 定义函数
+    function addNum(a, b) {
+        var m = a + b;
+        return m;
+    }
+    // 调用函数
+    var sum = addNum(4,10)
+    document.write(sum +"</hr>")
+    // 50以内所有奇数的和
+
+    var sum = 0;
+    for(var i =1;i<50;i+=2){
+        sum = sum +i;
+    }
+    console.log(sum+"</hr>");
+
+    // 定义一个函数求和
+    // 函数名不能重名，后面写的重名函数会把前面写的函数给覆盖掉；
+    // function sun(n)
+    // {
+    //     var m = 0;
+    //     for (var i =1; i<n;i+=2)
+    //     {
+    //         m+=i;
+    //     }
+    //     document.write(n+"以内所有奇数和为："+m+"<br/>");
+    // }
+    // sun(50)
+
+//n以内所有基础求和
+    function add(n) {
+        var m=0
+        for (var i=1;i<n;i+=2) {
+            m+=i;
+        }
+        document.write(m)
+    }
+    add(n);//n可以随意传值
+// n以内所有偶数求和
+    function add1(n) {
+        var m=0;
+        for (var i=1;i<n;i+=1) {
+            m+=i;
+        }
+        document.write(m)
+    }
+    add1(n);//n可以随意传值
+    
+    
+    // 定义函数
+    // function alertSum()
+    // {
+    //     var sum =0;
+    //     for (var i=1;i<10;i++){
+    //         sum = sum+i
+    //     }
+    //     alert (sum)//输出语句
+    // }
+    // // 调用函数
+    // alertSum();
+
+// match（）方法：不懂
+    var str ="Hello World";
+    document.write(str.match("world")+"<br/>");
+    document.write(str.match("World")+"<br/>");
+    document.write(str.match("worlld")+"<br/>");
+    document.write(str.match("world!")+"<br/>");
+
+//获取当前完整时间日期
+    document.write(Date())
+
+// slice截取元素
+    var arr = new Array("html","css","javascript","hao","HA")
+    document.write(arr.slice(1,3));//截取元素开始元素包含在截取数组之内，结束元素不包含在截取数组里
+// 将数组转换成字符串
+    var arr1 = new Array("LI","HAO","DSD","SA")
+    document.write(arr1.toString())
+    // 将数组元素连接成字符串
+    var arr2 = new Array("LI","HAO","DSD","SA")
+    document.write(arr2.join()+"<br/>")
+
+
+    // 生成0~1之间的随机数random()方法
+    document.write(Math.random());
+    document.write(Math.random());
+    document.write(Math.random());
+
+
+    window.open("http://www.lvyestudy.com ","","top=200,left=200");
+    window.open("http://www.lvyestudy.com ","","width=200,height=200");
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
+
