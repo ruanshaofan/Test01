@@ -1,0 +1,99 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #ffffff;
+}
+.top1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #fff;
+    color: green;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo img {
+    margin: 0 0 0 1rem;
+}
+
+.top2 {
+    height: 4rem;
+    background-color: white;
+    margin: 0 2rem;
+
+}
+
+.firstone1 {
+    line-height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+/*第一部分结束*/
+.top3 {
+    background-color: #29b078;
+}
+.nav_n {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    width: 100%;
+}
+
+.nav2 {
+    display: flex;
+    align-items: center;
+}
+.nav2 :hover {
+    border-bottom: 2px solid #ffffff;
+}
+.box1 {
+    margin: 0 0 0 1rem;
+    color: #fff;
+    line-height: 8rem;
+}
+
+
+
+.dropdown {
+    background-color: #29b078;
+}
+
+.top4 {
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+}
+.dropdown img {
+    background-color: #29b078;
+}
+
+.open > .dropdown-menu {
+    display: block;
+    text-align: center;
+}
+
+.dropdown-menu {
+    width: 100%;
+    top: 100%;
+    font-size: 1.5rem;
+    background-color: #29b078;
+}
+a {
+    color: white;
+}
+.box-1 {
+    line-height: 4rem;
+}
